@@ -136,15 +136,33 @@ divided.addEventListener('click', function(event){
 
 })
 
-
-
-
-function operator (nextOperator){
-    const inputVaule = parseFloat(display)
-    if (firstOperand == null && !isNaN(inputVaule))
-        calculator.firstOperand = inputVaule;
+divided.addEventListener('click', function(event){
+    console.log(display.innerText);
+    console.log(event.target.innerText)
+    console.log('button clicked')
+    display.innerText += event.target.innerText
+    console.log(event)
     
-    }
+
+})
+
+equall.addEventListener('click', function(event){
+    console.log(display.innerText);
+    console.log(eval(display.innerText))
+    console.log(event.target.innerText)
+    console.log('button clicked')
+    display.innerText += event.target.innerText
+    console.log(event)
+    
+    
+
+})
+
+
+
+
+
+
     
 
     
